@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Co Caro</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./playing.css">
+</head>
+<body>
+
+<div id = "container">
+    <h1 id="logo">Chơi Caro Với Bot AI</h1>
+    <div class="board-wrapper">
+        <div id="board-area" class="content-area">
+            <div id="info-board">
+                <img id="oppo1-avartar" class="oppo-avt" src="cotrang.png">
+                <img id="vs" src="vs.png">
+                <img id="oppo2-avartar" class="oppo-avt" src="coden.png">  
+                <br/>
+                <a href="#" style="font-weight:bold;"> Bạn </a> <a href="#" style="font-weight:bold;">Chơi Với</a> <a href="#" style="font-weight:bold;">Bot AI</a>
+            </div>
+            <div id="board">
+                Vui lòng kích hoạt javascript trên trình duyệt của bạn để tải trò chơi!
+            </div>
+            <div id="board-cpanel">
+                <button class="btn1 btn-med" id="newGame" onclick="ctrl.newGame()">
+                    <i class="fa fa-gamepad fa-2x" aria-hidden="true"></i> Ván mới</button>
+                <button class="btn1 btn-med" id="resign" onclick="ctrl.resign()">
+                    <i class="fa fa-flag-o fa-2x" aria-hidden="true"></i> Chịu thua</button>
+                <button class="btn1 btn-med" id="undo" onclick="ctrl.undo()">
+                    <i class="fa fa-undo fa-2x" aria-hidden="true"></i> Xin đi lại</button>                
+                <button class="btn1 btn-med" id="vaodaunhau" onclick="window.location.href='./vs/indexvs.html'">
+                    Vào Đấu Nhau</button>  <!-- Nút mới -->
+            </div>
+        </div>
+    </div>
+
+    <center><span style="font-size: 14px; font-weight:bold;">Trần Cường Thiết Kế</span></center>
+    <center><span style="font-size: 10px; font-weight:bold;">Zalo:0907860662</span></center>
+</div>
+
+</body>
+<script type="text/javascript" src="./ai.js"></script>
+<script type="text/javascript" src="./board.js"></script>
+<script type="text/javascript" src="./caro.js"></script>
+<script type="text/javascript" src="./boardCtrl.js"></script>
+<script type="text/javascript" src="./referee.js"></script>
+</html>
